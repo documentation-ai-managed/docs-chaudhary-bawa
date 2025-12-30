@@ -1,0 +1,158 @@
+---
+title: Getting Started with Chaudhary Bawa
+description: Set up your account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- Internet connection for accessing the dashboard
+
+<Callout kind="info">
+Chaudhary Bawa works best on desktop browsers. Mobile support is available but limited for editing.
+</Callout>
+
+## Sign Up and Log In
+
+Follow these steps to create your account and access the platform.
+
+<Steps>
+  <Step title="Visit the signup page" icon="user-plus">
+    Navigate to `https://app.chaudharibawa.com/signup` in your browser.
+  </Step>
+  <Step title="Enter your details" icon="edit-3">
+    Provide your email, create a strong password, and complete the CAPTCHA.
+  </Step>
+  <Step title="Verify your email" icon="mail">
+    Check your inbox for a verification link and click it to activate your account.
+  </Step>
+  <Step title="Log in" icon="log-in">
+    Return to `https://app.chaudharibawa.com/login`, enter your credentials, and access the dashboard.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+Save your password in a secure manager. You can enable two-factor authentication later in settings.
+</Callout>
+
+## Create a Documentation Space
+
+A documentation space organizes your project docs. Create one now.
+
+<Steps>
+  <Step title="Click New Space" icon="plus">
+    On the dashboard, select the `New Space` button in the top-right corner.
+  </Step>
+  <Step title="Name your space" icon="edit">
+    Enter a name like `My Project Docs` and add an optional description.
+  </Step>
+  <Step title="Configure settings" icon="settings">
+    Choose visibility (`Public`, `Private`, or `Team`) and click `Create`.
+  </Step>
+  <Step title="Enter the space" icon="arrow-right">
+    You'll land in your new space dashboard, ready for documents.
+  </Step>
+</Steps>
+
+## Add Your First Document
+
+Populate your space with a project document.
+
+<Tabs>
+  <Tab title="Markdown Editor" icon="edit-3">
+    <Steps>
+      <Step title="Create document">
+        Click `New Document` > `Markdown`.
+      </Step>
+      <Step title="Add content">
+        Use the editor to write your content.
+      </Step>
+    </Steps>
+
+````markdown
+# My First Doc
+
+Welcome to Chaudhary Bawa!
+
+## Features
+- Easy editing
+- Live preview
+````
+  </Tab>
+  <Tab title="MDX Editor" icon="code">
+    Select `New Document` > `MDX` for advanced components.
+
+````mdx
+## Quick Example
+
+<Callout kind="success">
+Your first MDX document!
+</Callout>
+````
+  </Tab>
+</Tabs>
+
+<CodeGroup tabs="Markdown,MDX">
+```markdown
+# Project README
+
+## Installation
+1. Clone the repo
+2. Run `npm install`
+```
+```mdx
+import { Callout } from 'components';
+
+# Project README
+
+<Callout kind="info">
+Installation complete.
+</Callout>
+```
+</CodeGroup>
+
+Publish by clicking `Save & Publish` in the top bar.
+
+## Interface Tour
+
+Explore the main areas of Chaudhary Bawa.
+
+<Columns cols={3}>
+  <Card title="Sidebar Navigation" icon="menu">
+    Access spaces, documents, settings, and search.
+  </Card>
+  <Card title="Editor Panel" icon="edit-3">
+    Write in Markdown or MDX with syntax highlighting and auto-save.
+  </Card>
+  <Card title="Preview Pane" icon="eye">
+    Real-time rendering of your docs with components.
+  </Card>
+</Columns>
+
+<Image
+  src="https://via.placeholder.com/800x400/3B82F6/white?text=Dashboard+Screenshot"
+  alt="Chaudhary Bawa dashboard interface showing sidebar, editor, and preview"
+  width="800"
+  height="400"
+/>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Customize Your Space" icon="settings" href="/configuration">
+    Learn advanced settings and branding.
+  </Card>
+  <Card title="Collaborate with Team" icon="users" href="/authentication">
+    Add members and manage permissions.
+  </Card>
+  <Card title="Embed Components" icon="code" href="/introduction">
+    Use rich MDX components in your docs.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+Congratulations! You've set up Chaudhary Bawa. Explore your space and start documenting.
+</Callout>

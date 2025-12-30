@@ -1,0 +1,120 @@
+---
+title: Welcome to Chaudhary Bawa
+description: Discover Chaudhary Bawa, your default documentation space for organizing and managing project documentation with ease.
+---
+
+## Overview
+
+Chaudhary Bawa provides a centralized space to create, organize, and manage your project documentation. You can build wikis, API references, and guides with real-time collaboration, version control, and powerful search. Start documenting your projects today and keep your team aligned effortlessly.
+
+## Key Features
+
+Chaudhary Bawa offers essential tools for effective documentation management.
+
+<Columns cols={3}>
+  <Card title="Intuitive Editor" icon="edit-3" href="/quickstart">
+    Write in Markdown or rich text with live previews. Embed code, images, and diagrams seamlessly.
+  </Card>
+  <Card title="Version History" icon="git-branch" href="#">
+    Track changes with full revision history. Revert to previous versions or compare diffs easily.
+  </Card>
+  <Card title="Advanced Search" icon="search" href="#">
+    Find content instantly across your entire documentation space using full-text search.
+  </Card>
+  <Card title="Team Collaboration" icon="users" href="/authentication">
+    Invite team members, assign permissions, and collaborate in real-time.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get up and running with Chaudhary Bawa in minutes.
+
+<Steps>
+  <Step title="Create Your Space" icon="plus">
+    Sign up at `https://dashboard.example.com` and create a new documentation space for your project.
+  </Step>
+  <Step title="Add Your First Page" icon="file-plus">
+    Click "New Page" and start writing using the built-in editor.
+  </Step>
+  <Step title="Publish and Share" icon="share-2">
+    Publish your page and share the link with your team. Customize access levels as needed.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Customize your space with the brand color `#3B82F6` in settings for a consistent look.
+</Callout>
+
+## Brand Guidelines
+
+Follow these guidelines to maintain visual consistency across your documentation.
+
+Use the primary brand color `#3B82F6` for headings, buttons, and accents.
+
+```css
+:root {
+  --brand-primary: #3B82F6;
+  --brand-primary-hover: #2563EB;
+}
+```
+
+```css highlight="1-2"
+button {
+  background-color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+button:hover {
+  background-color: var(--brand-primary-hover);
+}
+```
+
+## Quick Navigation
+
+Access essential sections quickly.
+
+<Columns cols={2}>
+  <Card title="Getting Started" icon="book-open" href="/quickstart">
+    Follow the quickstart guide to set up your first docs.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Learn how to manage users and permissions securely.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with the latest releases and improvements.
+  </Card>
+</Columns>
+
+## Embed Examples
+
+Embed your Chaudhary Bawa pages in other sites using this simple code.
+
+<CodeGroup tabs="HTML,React">
+  ````html
+  <iframe
+    src="https://docs.example.com/your-space/embed/page-id"
+    width="100%"
+    height="600"
+    frameborder="0">
+  </iframe>
+  ````
+
+  ````jsx
+  import { Embed } from '@chaudhary-bawa/embed';
+
+  function DocsEmbed() {
+    return (
+      <Embed
+        spaceId="your-space-id"
+        pageId="your-page-id"
+        height={600}
+      />
+    );
+  }
+  ````
+</CodeGroup>
+
+<Callout kind="info">
+  Ready to dive deeper? Check the [quickstart](/quickstart) for advanced setup, including integrating with your CI/CD pipeline.
+</Callout>

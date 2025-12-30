@@ -1,0 +1,125 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Chaudhary Bawa.
+---
+
+## Recent Updates
+
+Stay informed about new features, bug fixes, and improvements. Chaudhary Bawa releases updates regularly to enhance your documentation experience.
+
+<Callout kind="tip">
+  Subscribe to our RSS feed or join the community Discord to get notifications about new releases.
+</Callout>
+
+<Columns cols={3}>
+  <Card title="v1.2.0" icon="zap" href="#v1-2-0">
+    Real-time collaboration and performance boosts.
+  </Card>
+  <Card title="v1.1.0" icon="settings" href="#v1-1-0">
+    Advanced search and custom themes.
+  </Card>
+  <Card title="v1.0.0" icon="rocket" href="#v1-0-0">
+    Initial stable release.
+  </Card>
+</Columns>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]} id="v1-2-0">
+
+## New Features
+
+- Added real-time collaboration: Multiple users can now edit documents simultaneously with live cursors and conflict resolution.
+- Introduced version history: Roll back to previous document versions with one click.
+
+## Improvements
+
+- Enhanced search performance by `>50%` for large documentation spaces.
+- Updated UI components for better mobile responsiveness.
+
+## Bug Fixes
+
+- Fixed markdown rendering issues with nested lists.
+- Resolved authentication token refresh errors during long sessions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]} id="v1-1-0">
+
+## New Features
+
+- Advanced full-text search with filters for tags and sections.
+- Custom themes: Apply your brand colors like `#3B82F6` directly in settings.
+
+## Bug Fixes
+
+- Patched sidebar navigation collapse on window resize.
+- Corrected export to PDF functionality for pages with images.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]} id="v1-0-0">
+
+## New Features
+
+- Core documentation editor with MDX support.
+- Project organization: Create spaces, folders, and pages hierarchically.
+- API integration for embedding external content.
+
+## Breaking Changes
+
+- Updated config format: Migrate from `v0.9` by running the upgrade script.
+
+</Update>
+
+## Upgrade Instructions
+
+Follow these steps to update Chaudhary Bawa to the latest version.
+
+<Steps>
+  <Step title="Check Current Version" icon="check-circle">
+    Run the version check command in your project root.
+    
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm run version
+    ````
+    ````bash
+    yarn version
+    ````
+    </CodeGroup>
+  </Step>
+  
+  <Step title="Update Dependencies" icon="download">
+    Install the latest release.
+    
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm install chauhary-bawa@latest
+    ````
+    ````bash
+    yarn add chauhary-bawa@latest
+    ````
+    </CodeGroup>
+  </Step>
+  
+  <Step title="Restart Server" icon="refresh-cw">
+    Restart your development server to apply changes.
+    
+    ````bash
+    npm run dev
+    ````
+  </Step>
+</Steps>
+
+<Callout kind="alert">
+  Always back up your documentation space before upgrading, especially with breaking changes in `v1.0.0`.
+</Callout>
+
+## Upcoming Changes
+
+Preview what's coming next:
+
+- AI-powered content suggestions (v1.3.0)
+- Webhook integrations for automation (v1.3.0)
+- Enhanced analytics dashboard (v1.4.0)
+
+Check back regularly or follow us on GitHub for beta access.
